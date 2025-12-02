@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import BookSlider from "../components/BooksSlider";
 import books from "../data";
-
+import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div>
@@ -24,8 +24,11 @@ const Home = () => {
         category="داستان خارجی"
         books={books}
       />
-      <BookSlider title="کتاب‌های جنایی" category="جنایی" books={books} />
-      <BookSlider title="کتاب‌های وحشت" category="وحشت" books={books} />
+      <BookSlider
+       title="کتاب‌های جنایی" 
+       category="جنایی"
+        books={books} />
+      <Footer />
     </div>
   );
 };
